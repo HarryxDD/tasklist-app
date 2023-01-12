@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/task.css">
+</head>
+
+<body>
+    <!--Navbar -->
+    <header>
+        <div class="header_top d-flex justify-content-between px-sm-2" style="padding-top: 0px; padding-bottom:0px">
+            <ul style="list-style-type: none">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> Profile </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                    <a class="dropdown-item" href="/profile.html">My account</a>
+                    <a class="dropdown-item" onclick="logOut(event)">Log out</a>
+                    <a class="dropdown-item" href="/forgotpassword.html">Change Password</a>
+
+                </div>
+            </ul>
+        </div>
+        <div class="header_buttom">
+            <div class="header_buttom_content">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                    <div class="header_logo">
+                        <a class="header_logo_link navbar-brand px-0 my-0"
+                            href="/index.html">T@xk</a>
+                    </div>
+                    <div class="header_buttom_nav">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#header_menu" aria-controls="header_menu" aria-expanded="true"
+                            aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="header_menu">
+                            <ul class="navbar-nav" id="header_nav">
+                                <li id="login" class="nav-item">
+                                    <button id="user_login" style="border-radius: 20px;"
+                                        class="nav-link header_bottom_link"><a href="/login.html">Login</a></button>
+                                </li>
+                                <div id="register">
+                                    <li class="nav-item">
+                                        <button id="user_login" style="border-radius: 20px;"
+                                            class="nav-link header_bottom_link"> <a
+                                                href="/register.html">Register</a></button>
+
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--/.Navbar -->
+
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div style="border: 1px solid black;">
+                    <h1 style="text-align: center"> Reset Password</h1>
+                    <div class="form-group" style="padding-left: 70px;">
+                        <input style="margin:30px 0;" type="email" class="form-control w-75" id="exampleFormControlInput1"
+                            placeholder="New password">
+
+                        <input type="email" class="form-control w-75" id="exampleFormControlInput1"
+                            placeholder="Confirm your password">
+                    </div>
+                    <a href="/reset.html" style="border-radius: 30px; margin:10px 0 30px 120px;" type="button"
+                        class="btn btn-outline-info w-50">Save</a>
+                    <div style="margin: 0 0 50px 40px;">
+                        <a href="/login.html">Back to login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  T@xk Inc.
+                </h6>
+                <p>
+                  Best application for your task management.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  App
+                </h6>
+                <p>
+                  <a href="/index.html" class="text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="/task.html" class="text-reset">Task</a>
+                </p>
+                <p>
+                  <a href="/profile.html" class="text-reset">Profile</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> Danang, Vietnam</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  truonghavu@deptrai.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i>(+84) 90 646 4186</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="#">truonghavu</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
